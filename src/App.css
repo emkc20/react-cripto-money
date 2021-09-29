@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #1c1f21;
+}
+.green{
+  color:green
+}
+.red{
+  color:red
+}
+.crypto-list {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+.money-section {
+    width: 21%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-block: 25px;
+    cursor: pointer;
+    color: white;
+    height: 230px;
+    border: 2px solid #e9ad03;
+    border-radius:10px;
+    padding-block: 10px;
+    transition: .3s all;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.money-section:hover {
+transform: scale(1.05) translateY(-2px);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+img {
+    width: 90px;
+    height: 90px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.topic {
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-block: 25px;
 }
 
-.App-link {
-  color: #61dafb;
+input[type="text"] {
+    width: 250px;
+    height: 35px;
+    padding-left: 10px;
+    background: #f3ba2f;
+    border: none;
+    border-radius: 25px;
+    color:white;
+    letter-spacing: 1.2px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input:focus {
+outline: unset;
 }
